@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Deployment
+metadata: 
+  name: my-deploy
+spec:
+   containers:
+   - name: nginx 
+   ports:
+   - containerPort: 8080
