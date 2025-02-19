@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+  namespace: dev-ns
+  env: prod
+spec:
+  container:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 8000
