@@ -4,9 +4,9 @@ metadata:
   name: nginx
   labels:
   namespace: dev-ns
-  env: prod
+    env: prod
 spec:
-  container:
+  containers:
   - name: nginx
     image: nginx
     ports:
