@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: Annotations
+  annotations:
+    imageregistery: "https://hub.docker.com"
+spec:
+  conatiners:
+  - name: nginx
+    image: nginx
+    ports:
+    - conatinerport: 8080
