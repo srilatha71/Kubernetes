@@ -8,14 +8,14 @@ spec:
     image: nginx
     env:
       - name: course1
-     valueFrom:
-      configMapkeyRef:
-        name: config
-        key: course
         valueFrom:
-      configMapkeyRef:
-        name: config
-        key: duration
+          configMapkeyRef:
+            name: config
+            key: course
+        valueFrom:
+          configMapkeyRef:
+            name: config
+            key: duration
 ---
 apiVersion: v1
 kind: Pod
@@ -27,6 +27,6 @@ spec:
     image: nginx     
     envFrom:
       - configMapRef:
-         name: sample-config       
+         name: config     
 
       
