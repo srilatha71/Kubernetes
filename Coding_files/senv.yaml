@@ -9,5 +9,5 @@ spec:
   env:
     - name: course
       value: devops
-    -name: trainer
+    - name: trainer
       value: shiva
