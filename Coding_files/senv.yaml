@@ -6,8 +6,8 @@ spec:
   containers:
   - name: nginx
     image: nginx
-  env:
-    - name: course
-      value: devops
-    - name: trainer
-      value: shiva
+    env:
+      - name: course
+        value: devops
+      - name: trainer
+        value: shiva
