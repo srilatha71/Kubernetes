@@ -12,6 +12,7 @@ spec:
           configMapkeyRef:
             name: config
             key: course
+      - name: duration1
         valueFrom:
           configMapkeyRef:
             name: config
