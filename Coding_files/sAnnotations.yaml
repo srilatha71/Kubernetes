@@ -5,8 +5,8 @@ metadata:
   annotations:
     imageregistery: "https://hub.docker.com"
 spec:
-  conatiners:
+  containers:
   - name: nginx
     image: nginx
     ports:
-    - conatinerport: 8080
+    - containerport: 8080
