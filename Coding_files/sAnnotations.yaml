@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: Annotations
+  name: annotations- label
   annotations:
     imageregistery: "https://hub.docker.com"
 spec:
