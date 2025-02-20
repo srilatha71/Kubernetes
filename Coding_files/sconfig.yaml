@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config
+data: 
+    course: dev
+    duration: "120" 
+    name: devops
+    year: 2025
