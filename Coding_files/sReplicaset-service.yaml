@@ -4,18 +4,18 @@ metadata:
   name: nginx
   labels:
     app: nginx
-    tier: forntend
+    tier: frontend
 spec:
   replicas: 3
   selector:
     matchLabels:
        app: nginx
-       tier: forntend
+       tier: frontend
   template:
     metadata:
     labels:
       app: nginx
-      tier: forntend
+      tier: frontend
     spec:
       conatiners:
       - name: nginx
@@ -28,7 +28,7 @@ metadata:
 spec:
   selector: 
     app: nginx
-    tier: forntend
+    tier: frontend
   ports:
   - name: nginx-svc-port
     protocol: TCP
