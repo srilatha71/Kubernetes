@@ -22,7 +22,7 @@ spec:
         image: nginx
 ---
 apiVersion: v1
-kind: service
+kind: Service
 metadata:
   name: nginx
 spec:
