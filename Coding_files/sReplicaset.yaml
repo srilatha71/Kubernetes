@@ -6,8 +6,8 @@ metdata:
     app: nginx
     tier: frontend
 spec:
-  replicate:3
-  selectors:
+  replicas:3
+  selector:
     matchLabels: 
       tier: frontend
       app: nginx
