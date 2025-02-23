@@ -9,8 +9,8 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   storageClassName: aws-ebs-sc
-  local:
-    path: /mnt/data
+  #/local:
+   # path: /mnt/data
   nodeAffinity:
     required:
       nodeSelectorTerms:
