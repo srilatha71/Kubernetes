@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+    tier: forntend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+       app: nginx
+       tier: forntend
+  template:
+    metadata:
+    labels:
+      app: nginx
+      tier: forntend
+    spec:
+      conatiners:
+      - name: nginx
+        image: nginx
+---
+apiVersion: v1
+kind: service
+metadata:
+  name: nginx
+spec:
+  selector: 
+    app: nginx
+    tier: forntend
+  ports:
+  - name: nginx-svc-port
+    protocol: TCP
+    port: 80
+    targetport: 80
+
+
+  
+
+      
+
+
+  
+
+   
