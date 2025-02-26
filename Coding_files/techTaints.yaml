@@ -8,8 +8,8 @@ spec:
   containers:
   - image: redis
     name: redis
-    tolerations:
-    - key: "gpu"
-      operator: "Equal"
-      value: "true"
-      effect: "NoSchedule"
+  tolerations:
+  - key: "gpu"
+    operator: "Equal"
+    value: "true"
+    effect: "NoSchedule"
