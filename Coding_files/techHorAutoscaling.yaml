@@ -27,7 +27,7 @@ kind: Service
 metadata:
   name: php-apache
   labels:
-  run: php-apache
+    run: php-apache
 spec:
   ports:
   - port: 80
