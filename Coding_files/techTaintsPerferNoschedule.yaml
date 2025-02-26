@@ -13,3 +13,7 @@ spec:
     operator: "Equal"
     value: "app1"
     effect: "NoExecute"
+  - key: "gpu"
+    operator: "Equal"
+    value: "false"
+    effect: "NoSchedule"
