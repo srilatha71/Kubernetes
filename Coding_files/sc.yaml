@@ -1,0 +1,11 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: aws-ebs-sc
+provisioner: ebs.csi.aws.com
+parameters:
+  type: gp2 # Change this to your preferred EBS volume type (gp2, gp3, io1, io2, st1, sc1)
+  fsType: ext4 # Change this to your preferred filesystem type (ext4, xfs, etc.)
+reclaimPolicy: Retain # Change this to your preferred reclaim policy (Retain, Delete, Recycle)
+volumeBindingMode: Immediate # Change this to your preferred volume binding mode (Immediate, WaitForFirstConsumer)
+allowVolumeExpansion: true # Enable volume expansion if supported by the storage provider
